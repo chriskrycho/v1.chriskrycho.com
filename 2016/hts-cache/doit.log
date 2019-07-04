@@ -1,0 +1,8 @@
+-r4 -%e0 blog.chriskrycho.com -*?showComment* -*.rar -*.zip -*.mov -*.mpg -*.mpeg -*.avi -*.asf -*.mp3 -*.mp2 -*.rm -*.wav -*.vob -*.qt -*.vid -*.ac3 -*.wma -*.wmv -*/feeds/* -*?comments* -*/comments -*&target=*
+File generated automatically on Sat, 01 Jul 2017 14:37:30, do NOT edit
+
+To update a mirror, just launch httrack without any parameters
+The existing cache will be used (and modified)
+To have other options, retype all parameters and launch HTTrack
+To continue an interrupted mirror, just launch httrack without any parameters
+
