@@ -39,7 +39,7 @@ function changeColors() {
       let nextL = l + lDir;
       lDir = nextL < 85 ? 0.1 : nextL > 95 ? -0.1 : lDir;
       r.style.setProperty("--l", nextL + "%");
-      setThemeColor(r);
+      setThemeColor();
     }, 400);
   }, 100);
 
@@ -50,7 +50,7 @@ function changeColors() {
       dDir = nextD < 10 ? 0.1 : nextD > 20 ? -0.1 : dDir;
 
       r.style.setProperty("--d", nextD + "%");
-      setThemeColor(r);
+      setThemeColor();
     }, 400);
   }, 300);
 }
