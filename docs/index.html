@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>…nope, not anymore.</title>
+    <meta
+      name="description"
+      content="an empty archive page in place of a website I no longer want out in the world"
+    />
+    <meta property="og:title" content="…nope, not anymore." />
+    <meta
+      property="og:description"
+      content="an empty archive page in place of a website I no longer want out in the world"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      name="twitter:description"
+      content="an empty archive page in place of a website I no longer want out in the world"
+    />
+    <meta name="theme-color" content="hsl(228, 40%, 90%)" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="hsl(228, 40%, 10%)"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      @font-face {
+        font-family: Berkeley Mono;
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("fonts/BerkeleyMono-Regular.woff2") format("woff2"),
+          url("fonts/BerkeleyMono-Regular.woff") format("woff");
+      }
+
+      @font-face {
+        font-family: Berkeley Mono;
+        font-weight: normal;
+        font-style: italic;
+        font-display: swap;
+        src: url("fonts/BerkeleyMono-Italic.woff2") format("woff2"),
+          url("fonts/BerkeleyMono-Italic.woff") format("woff");
+      }
+
+      :root {
+        --fs: 14px;
+        --lh: 1.2;
+        --h: 208;
+        --s: 85%;
+        --d: 10%;
+        --l: 90%;
+
+        --h-link: calc(90 + var(--h));
+
+        --fg-l: var(--d);
+        --bg-l: var(--l);
+        --fg: hsl(var(--h), var(--s), var(--fg-l));
+        --bg: hsl(var(--h), var(--s), var(--bg-l));
+
+        --link-hover: hsl(var(--h-link), 0%, 0%);
+        --link-shadow: hsl(var(--h-link), var(--s), 100%);
+        --link-shadow-multiplier: 1.5;
+      }
+
+      @media screen and (min-width: 600px) {
+        :root {
+          --fs: 16px;
+          --lh: 1.4;
+        }
+      }
+
+      @media screen and (min-width: 800px) {
+        :root {
+          --fs: 16px;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        :root {
+          --fs: 18px;
+        }
+      }
+
+      @media screen and (min-width: 1100px) {
+        :root {
+          --fs: 20px;
+        }
+      }
+
+      @media screen and (min-width: 1200px) {
+        :root {
+          --fs: 22px;
+        }
+      }
+
+      @media screen and (min-width: 1300px) {
+        :root {
+          --fs: 24px;
+        }
+      }
+
+      @media screen and (min-width: 1400px) {
+        :root {
+          --fs: 26px;
+        }
+      }
+
+      @media screen and (min-width: 1760px) {
+        :root {
+          --fs: 28px;
+        }
+      }
+
+      @media screen and (min-width: 2160px) {
+        :root {
+          --fs: 30px;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg-l: var(--l);
+          --bg-l: var(--d);
+
+          --link-hover: hsl(var(--h-link), var(--s), var(--fg-l));
+          --link-shadow: var(--link-hover);
+          --link-shadow-size: 1;
+        }
+      }
+
+      html {
+        font: var(--fs) / var(--lh) "Berkeley Mono", "Menlo", "Consolas",
+          monospace;
+        color: var(--fg);
+        background: var(--bg);
+      }
+
+      body {
+        /* second wins if it can be interpeted. Still CSS-ing in 2022. */
+        height: 100vh;
+        height: 100dvh;
+        margin: 0;
+        padding: 0 1.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+
+      p {
+        width: 100%;
+        max-width: min(calc(100vw - 3.4rem), 40rem);
+      }
+
+      .sign-off {
+        text-align: right;
+        padding-right: 3.4rem;
+      }
+
+      a:any-link {
+        color: var(--link);
+        transition: all 0.1s ease-out;
+      }
+
+      a:any-link span:not([role="presentation"]) {
+        text-decoration: underline;
+        font-style: italic;
+      }
+
+      a:any-link:hover {
+        color: var(--link-hover);
+        text-shadow: 0 0 calc(0.33em * var(--link-shadow-multiplier))
+            var(--link-shadow),
+          1px 1px calc(0.33em * var(--link-shadow-multiplier))
+            var(--link-shadow),
+          -1px -1px calc(0.33em * var(--link-shadow-multiplier))
+            var(--link-shadow);
+      }
+
+      dl {
+        margin: 0;
+        padding: 0;
+      }
+
+      dt {
+        margin: calc(var(--lh) * 1em) 0 0;
+      }
+
+      dd {
+        margin: 0 calc(var(--lh) * 1em) calc(var(--lh) * 1em);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- prettier-ignore -->
+    <p>
+      Look: we all know that <a href="https://www.w3.org/Provider/Style/URI">cool
+      <abbr title="universal resource identifier">URI</abbr>s don’t change</a>.
+      But we also know that sometimes, you have a website full of the things you
+      wrote when you were 18–23 years old, and that none of that needs to live
+      on in the public eye. The things which once lived here? They fit in that
+      latter bucket. (I should know: I read back through them, God help me.)
+    </p>
+    <p>
+      If you really want to dig into what 19-year-old Chris Krycho was like—the
+      kinds of things he (that is: I) published to Xanga in 2005–2006—the
+      content is on GitHub and I haven’t hidden it. But it’s there <em>only</em>
+      as a historical artifact, and I make no promises not to fully remove it at
+      some point.
+    </p>
+    <p class="sign-off">
+      — <a href="https://www.chriskrycho.com">Chris Krycho</a>, January 2023
+    </p>
+  </body>
+</html>
